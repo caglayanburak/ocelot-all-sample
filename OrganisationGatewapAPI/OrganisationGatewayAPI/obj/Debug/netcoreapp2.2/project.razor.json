@@ -1,0 +1,16 @@
+{
+  "FilePath": "/Users/burakcaglayan/Projects/Ocelot/OrganisationGatewapAPI/OrganisationGatewayAPI/OrganisationGatewayAPI.csproj",
+  "Configuration": {
+    "ConfigurationName": "MVC-2.1",
+    "LanguageVersion": "2.1",
+    "Extensions": [
+      {
+        "ExtensionName": "MVC-2.1"
+      }
+    ]
+  },
+  "ProjectWorkspaceState": null,
+  "RootNamespace": "OrganisationGatewayAPI",
+  "Documents": [],
+  "SerializationFormat": "0.1"
+}

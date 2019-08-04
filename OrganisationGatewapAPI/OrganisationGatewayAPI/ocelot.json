@@ -1,0 +1,125 @@
+{
+    "ReRoutes": [
+        {
+            "DownstreamPathTemplate": "/api/reservations/",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5000
+                }
+            ],
+            "UpstreamPathTemplate": "/reservations/",
+            "UpstreamHttpMethod": [
+                "Get",
+                "Post",
+                "Put"
+            ]
+        },
+
+        {
+            "DownstreamPathTemplate": "/api/restaurants",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5001
+                }
+            ],
+            "UpstreamPathTemplate": "/restaurants/",
+            "UpstreamHttpMethod": [
+                "Get",
+                "Post"
+            ], "QoSOptions": {  
+                "ExceptionsAllowedBeforeBreaking":2,  
+                "DurationOfBreak":1000,  
+                "TimeoutValue":2000  
+            } 
+        },
+        {
+            "DownstreamPathTemplate": "/api/users",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5002
+                }
+            ],
+            "UpstreamPathTemplate": "/users/",
+            "UpstreamHttpMethod": [
+                "Get",
+                "Post"
+            ]
+        },
+        {
+            "DownstreamPathTemplate": "/api/auth",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 9000
+                }
+            ],
+            "UpstreamPathTemplate": "/auth/",
+            "UpstreamHttpMethod": [
+                "Get"
+            ]
+        },
+        {
+            "DownstreamPathTemplate": "/api/users/{id}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5002
+                }
+            ],
+            "UpstreamPathTemplate": "/users/{id}",
+            "UpstreamHttpMethod": [
+                "Get"
+            ],
+            "Key": "user-byid"
+        },
+        {
+            "DownstreamPathTemplate": "/api/reservations/reservation-byuserid/{id}",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 5000
+                }
+            ],
+            "UpstreamPathTemplate": "/api/reservations/reservation-byuserid/{id}",
+            "UpstreamHttpMethod": [
+                "Get"
+            ],
+           
+            "Key": "reservation-byuserid",
+            "RateLimitOptions": {
+                "ClientWhiteList": [],
+                "EnableRateLimiting": true,
+                "Period": "1s",
+                "Limit": 1,
+                "PeriodTimespan": 1
+            }
+        }
+    ],
+    "GlobalConfiguration": {
+        "BaseUrl": "http://localhost:7000",
+        "RequestIdKey": "OcRequestId",
+        "RateLimitOptions": {  
+            "DisableRateLimitHeaders": false,  
+            "QuotaExceededMessage": "Customize Tips!",  
+            "HttpStatusCode": 999  
+          }  
+    },
+    "Aggregates": [
+        {
+            "ReRouteKeys": [
+                "reservation-byuserid",
+                "user-byid"
+            ],
+            "UpstreamPathTemplate": "/api/reservationwithuser/{id}"
+        }
+    ]
+}

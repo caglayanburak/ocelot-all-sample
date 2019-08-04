@@ -1,0 +1,14 @@
+/Users/burakcaglayan/Projects/Ocelot/JWTAuthenticationDemo/obj/Debug/netcoreapp2.2/JWTAuthenticationDemo.csprojAssemblyReference.cache
+/Users/burakcaglayan/Projects/Ocelot/JWTAuthenticationDemo/obj/Debug/netcoreapp2.2/JWTAuthenticationDemo.csproj.CoreCompileInputs.cache
+/Users/burakcaglayan/Projects/Ocelot/JWTAuthenticationDemo/obj/Debug/netcoreapp2.2/JWTAuthenticationDemo.RazorAssemblyInfo.cache
+/Users/burakcaglayan/Projects/Ocelot/JWTAuthenticationDemo/obj/Debug/netcoreapp2.2/JWTAuthenticationDemo.RazorAssemblyInfo.cs
+/Users/burakcaglayan/Projects/Ocelot/JWTAuthenticationDemo/obj/Debug/netcoreapp2.2/JWTAuthenticationDemo.AssemblyInfoInputs.cache
+/Users/burakcaglayan/Projects/Ocelot/JWTAuthenticationDemo/obj/Debug/netcoreapp2.2/JWTAuthenticationDemo.AssemblyInfo.cs
+/Users/burakcaglayan/Projects/Ocelot/JWTAuthenticationDemo/bin/Debug/netcoreapp2.2/JWTAuthenticationDemo.deps.json
+/Users/burakcaglayan/Projects/Ocelot/JWTAuthenticationDemo/bin/Debug/netcoreapp2.2/JWTAuthenticationDemo.runtimeconfig.json
+/Users/burakcaglayan/Projects/Ocelot/JWTAuthenticationDemo/bin/Debug/netcoreapp2.2/JWTAuthenticationDemo.runtimeconfig.dev.json
+/Users/burakcaglayan/Projects/Ocelot/JWTAuthenticationDemo/bin/Debug/netcoreapp2.2/JWTAuthenticationDemo.dll
+/Users/burakcaglayan/Projects/Ocelot/JWTAuthenticationDemo/bin/Debug/netcoreapp2.2/JWTAuthenticationDemo.pdb
+/Users/burakcaglayan/Projects/Ocelot/JWTAuthenticationDemo/obj/Debug/netcoreapp2.2/JWTAuthenticationDemo.RazorTargetAssemblyInfo.cache
+/Users/burakcaglayan/Projects/Ocelot/JWTAuthenticationDemo/obj/Debug/netcoreapp2.2/JWTAuthenticationDemo.dll
+/Users/burakcaglayan/Projects/Ocelot/JWTAuthenticationDemo/obj/Debug/netcoreapp2.2/JWTAuthenticationDemo.pdb
